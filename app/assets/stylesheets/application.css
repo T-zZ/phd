@@ -10,27 +10,29 @@
  *
  *= require_self
  *= require_tree .
+ *= require colorbox-rails
  */
 body {
     background: #DDD;
-    font-family: Verdana;
+    font-family: Arial;
     font-size: 13px;
     line-height: 18px;
 }
 
+#header {
+}
+
 #body_content, #side_body_content {
    float: left;
-   width: 45%;
    background: white;
    color: #333;
    padding: 20px;
                   }
 #menu ul {
-   list-style: none;
-   padding: 0px;
    li {
      float: left;
      margin-right: 10px;
+     -decoration: none;
      a {
        display: block;
        padding: 5px 10px;
