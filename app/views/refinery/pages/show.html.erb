@@ -1,12 +1,11 @@
 <%# <%= render '/refinery/content_page' %>
 
 <% content_for :body_content_right do %>
-  <ul id='gallery'>
+  <div class='fotorama'>
     <% @page.images.each do |image| %>
-      <li>
-      <%= link_to image_tag(image.thumbnail("200x200#c").url), image.url, :data => { :colorbox => true } %>
-      </li>
+      <%= image_tag(image.url) %>
     <% end %>
-  </ul>
+  </div>
 <% end %>
+
 <%= render :partial => "/refinery/content_page" %>

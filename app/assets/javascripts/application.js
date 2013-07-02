@@ -14,3 +14,5 @@
 //= require jquery_ujs
 //= require_tree .
 //= require colorbox-rails
+//= require fotorama.js
+//= require test.js
