@@ -2,10 +2,10 @@ $(document).ready(function() {
  $('.menu li li').show();
  $('.selected > a').toggle(
    function() {
-     $('.menu li li').fadeOut('fast');
+     $('.menu li li').slideUp('fast');
    }, 
    function() {
-     $('.menu li li').fadeIn('fast');
+     $('.menu li li').slideDown('fast');
    } 
    );
 }); // end ready
