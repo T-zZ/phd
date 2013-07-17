@@ -11,61 +11,135 @@
  *= require_self
  *= require_tree .
  *= require fotorama.css
+ *= require reset.css.sass
  */
-body
-  background: #F2F2F2
-  font-size: 13px
 
-body a
-  text-decoration: none
-  font-family: 'Kabel Heavy', Arial
-  color: black
+
+///////// Fonts ////////
 
 @font-face
   font-family: 'Kabel Heavy'
-  src: font-url('KabelLTStd-Heavy.otf') format('opentype')
-  src: local('Kabel Heavy'), font-url('?KabelLTStd-Heavy.otf?#iefix')
-  font-weigth: normal
+  src: font-url('KabelLTStd-Heavy.otf') 
+  src: local('Kabel Heavy'), font-url('KabelLTStd-Heavy.otf') format('opentype')
+  font-weigth: Heavy
   font-style: normal
 
+@font-face
+  font-family: 'Kabel Black'
+  src: font-url('KabelLTStd-Black.otf') 
+  src: local('Kabel Black'), font-url('KabelLTStd-Black.otf') format('opentype')
+  font-weigth: bold
+  font-style: normal
+
+@font-face
+  font-family: 'Open Sans'
+  src: font-url('OpenSans-Regular.ttf')
+  src: local('Open Sans'), font-url('OpenSans-Regular.ttf') format('ttf')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'Open Sans'
+  src: font-url('OpenSans-Bold.ttf')
+  src: local('Open Sans'), font-url('OpenSans-Bold.ttf') format('ttf')
+  font-weight: bold
+  font-style: normal
+
+@font-face
+  font-family: 'Open Sans'
+  src: font-url('OpenSans-Light.ttf')
+  src: local('Open Sans'), font-url('OpenSans-Light.ttf') format('ttf')
+  font-weight: light
+  font-style: normal
+
+//////////////////////
+
+body
+  background: #F2F2F2
+
+a
+  color: #666
+  text-decoration: none
+  
+a:hover
+  color: black
 
 #header
   float: left
-  margin: 20px
+  margin: 70px
   width: 30%
 
-#page
-  background-color: red
-  float: left
+  h1 a
+    font-family: 'Open Sans', 'Merriweather',  Arial
+    font-size: 1.9em
+    font-weight: normal
+    color: black
 
 .menu
+  font-family: 'Open Sans Light', Arial
   margin-top: 90px
-ul
-  //border: 1px solid red
-  padding-left: 30px
-  line-height: 2em
-  list-style-type: none
-  
 
-.images
-  border: 1px solid red
+  a
+    background: url('images/arrow-toggle.png')
+    height: 17px
+
+  ul
+    padding-top: 5px
+
+  li
+    padding-left: 30px
+    line-height: 1.8em
+    list-style-type: none
+
+#page
+  margin-left: 400px
   padding: 20px
-  position: absolute
+  position: relative
+  
+  .imghome
+    background-color: white
+    padding: 20px
+    position: absolute
+
+  .femmes
+    left: 420px
+    top: 180px
+
+    ul
+      margin-left: -20px
+
+      li
+        float: left
+        padding-left: 20px
+
+  .sansmodestine
+    top: 360px
+    left: 420px
+
+.fotorama
+  padding: 20px 
+  border: 1px solid red
   background-color: white
-
-.femmes
-  border: 1px solid blue
-  //left: 120px
-
-.Aline
-  margin: 120px
-  left: 370px
-
-.sans_modestine
-  top: 370px
-  left: 40%
 
 footer
   clear: both
   float: left
 
+.container
+  font-family: arial
+  margin: auto
+  position: absolute
+  top: 0
+  width: 300px
+
+.container__title
+  background-color: black
+  color: white
+  padding: 5px
+
+.container__form
+  background-color: grey
+  padding: 5px
+
+  input
+    margin: 5px
