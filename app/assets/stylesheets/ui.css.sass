@@ -1,0 +1,116 @@
+/* Fonts */
+
+@font-face
+  font-family: 'Kabel Heavy'
+  src: font-url('KabelLTStd-Heavy.otf') 
+  src: local('Kabel Heavy'), font-url('KabelLTStd-Heavy.otf') format('opentype')
+  font-weigth: Heavy
+  font-style: normal
+
+@font-face
+  font-family: 'Kabel Black'
+  src: font-url('KabelLTStd-Black.otf') 
+  src: local('Kabel Black'), font-url('KabelLTStd-Black.otf') format('opentype')
+  font-weigth: bold
+  font-style: normal
+
+@font-face
+  font-family: 'Open Sans'
+  src: font-url('OpenSans-Regular.ttf')
+  src: local('Open Sans'), font-url('OpenSans-Regular.ttf') format('ttf')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'Open Sans'
+  src: font-url('OpenSans-Bold.ttf')
+  src: local('Open Sans'), font-url('OpenSans-Bold.ttf') format('ttf')
+  font-weight: bold
+  font-style: normal
+
+@font-face
+  font-family: 'Open Sans'
+  src: font-url('OpenSans-Light.ttf')
+  src: local('Open Sans'), font-url('OpenSans-Light.ttf') format('ttf')
+  font-weight: light
+  font-style: normal
+
+//////////////////////
+
+body
+  background: #F2F2F2
+
+a
+  color: #666
+  text-decoration: none
+  
+a:hover
+  color: black
+
+.container
+
+.header
+  border: 1px solid red
+
+  h1 a
+    font-family: 'Open Sans', 'Merriweather',  Arial
+    font-size: 1.9em
+    font-weight: normal
+    color: black
+
+.home_thumb
+
+.menu
+  font-family: 'Open Sans Light', Arial
+
+  //a
+    background: url('images/arrow-toggle.png')
+    height: 17px
+
+  //ul
+    padding-top: 5px
+
+  //li
+    padding-left: 30px
+    line-height: 1.8em
+    list-style-type: none
+
+.photography
+  border: 1px solid blue
+  
+  .imghome
+    border: 1px solid blue
+    padding: 20px
+    background: white
+    //position: absolute
+
+  .femmes
+    //left: 420px
+    //top: 180px
+
+    ul
+      //margin-left: -20px
+
+      li
+        //float: left
+        //padding-left: 20px
+
+  .sansmodestine
+    //top: 360px
+    //left: 420px
+
+.fotorama
+  padding: 20px 
+  background-color: white
+
+.footer
+  clear: both
+  float: left
+
+/* Media Queries
+ ================================================== */
+
+@media only screen and (max-width: 959px)
+
+  body
+    background-color: red

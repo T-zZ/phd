@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<%= render '/refinery/html_tag' %>
+  <% site_bar = render('/refinery/site_bar', :head => true) -%>
+  <%= render '/refinery/head' %>
+  <body class="container">
+
+    <%= site_bar -%>
+    <%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
+
+
+    <header class="one-third column header">
+       <%= render '/refinery/header' -%>
+     </header>
+
+     <div class="two-thirds column photography">
+       <%= yield %>
+     </div>
+
+
+     <footer class="footer">
+        <%= render '/refinery/footer' -%>
+     </footer>
+
+    <%= render '/refinery/javascripts' %>
+  </body>
+</html>
