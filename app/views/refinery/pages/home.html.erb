@@ -2,11 +2,13 @@
   <%=raw @page.content_for(:body) %>
 </div>
 
-<section class="container">
-  <h2 class="container__title">Login</h2>
-  <div class="container__form">
-    <form>
-      Username:<input type="text" name="username"></br>
-      Password:<input type="password" name="password"></br>
-      <input type="submit" name="submit">
-    </form>
+<% content_for :body_content_right do %>
+    <ul id='gallery'>
+    <% @page.images.each do |image| %>
+        <li>
+        <%= link_to image_tag(image.thumbnail("200x200#c").url), image.thumbnail("900x600").url %>
+      </li>
+   <% end %>
+  </ul>
+<% end %>
+<%= render :partial => "/refinery/content_page" %>
